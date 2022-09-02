@@ -32,6 +32,9 @@ class UltraMagicString(object):
 
     def split(self, *args, **kw):
         return self.value.split(*args, **kw)
+    
+    def endswith(self, *args, **kw):
+        return self.value.endswith(*args, **kw)
 
 
 long_description = UltraMagicString(u'\n\n'.join((
